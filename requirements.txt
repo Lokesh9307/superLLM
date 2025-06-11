@@ -5,6 +5,6 @@ langchain-groq
 PyPDF2
 python-dotenv
 langchain
-googletrans==4.0.0-rc1
-youtube-transcript-api==0.6.1
-waitress==2.1.2
+googletrans
+youtube-transcript-api
+
