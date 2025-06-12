@@ -8,4 +8,3 @@ langchain
 googletrans
 youtube-transcript-api
 gunicorn
-sentence-transformers
