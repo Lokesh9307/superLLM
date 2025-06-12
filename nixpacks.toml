@@ -1,6 +1,6 @@
 [phases.setup]
 nixPkgs = [
-  "(python311.withPackages (ps: with ps; [ flask gunicorn pypdf2 python-dotenv langchain googletrans youtube-transcript-api ]))"
+  "(python311.withPackages (ps: with ps; [ flask gunicorn pypdf2 python-dotenv langchain googletrans youtube-transcript-api sentence-transformers]))"
 ]
 
 
