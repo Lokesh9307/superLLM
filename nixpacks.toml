@@ -1,11 +1,11 @@
 [phases.setup]
-nixPkgs = ["python311", "git"]
+nixPkgs = [
+  "(python311.withPackages (ps: with ps; [ flask gunicorn pypdf2 python-dotenv langchain googletrans youtube-transcript-api sentence-transformers langchain-groq faiss-cpu]))"
+]
 
 [phases.install]
-cmds = [
-  "pip install --break-system-packages --upgrade pip",
-  "pip install --break-system-packages -r requirements.txt"
-]
+# Optional: Add this if you still want to run any script
+cmds = []
 
 [phases.start]
 cmd = "gunicorn main:app"
