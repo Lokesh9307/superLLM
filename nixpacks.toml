@@ -1,7 +1,9 @@
 [phases.setup]
 nixPkgs = [
-  "(python311.withPackages (ps: with ps; [ flask gunicorn ]))"
+  "(python311.withPackages (ps: with ps; [ flask gunicorn pypdf2 python-dotenv langchain googletrans youtube-transcript-api ]))"
 ]
+
+
 
 [phases.install]
 # Optional: Add this if you still want to run any script
