@@ -7,4 +7,4 @@ python-dotenv
 langchain
 googletrans
 youtube-transcript-api
-gunicorn
+waitress==2.1.2
