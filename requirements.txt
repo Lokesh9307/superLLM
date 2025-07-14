@@ -1,10 +1,10 @@
 Flask
 faiss-cpu
-sentence-transformers
 langchain-groq
 PyPDF2
 python-dotenv
 langchain
 googletrans
 youtube-transcript-api
-waitress==2.1.2
+waitress
+langchain-huggingface
