@@ -1,7 +1,6 @@
 import faiss
 import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
-
+from langchain_community.embeddings import HuggingFaceEmbeddings
 def build_index(chunks, embedder):
     vectors = embedder.encode(chunks)
     index = faiss.IndexFlatL2(vectors.shape[1])
